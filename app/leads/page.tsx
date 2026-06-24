@@ -15,7 +15,7 @@ const sampleLeads = [
     source: 'Instagram',
     campaign: 'Summer Sale Campaign',
     status: 'Won',
-    revenue: '₦125,000',
+    revenue: '$125,000',
   },
   {
     id: 2,
@@ -24,7 +24,7 @@ const sampleLeads = [
     source: 'Facebook',
     campaign: 'Product Launch',
     status: 'Interested',
-    revenue: '₦85,000',
+    revenue: '$85,000',
   },
   {
     id: 3,
@@ -33,7 +33,7 @@ const sampleLeads = [
     source: 'Website',
     campaign: 'Organic Traffic',
     status: 'Contacted',
-    revenue: '₦0',
+    revenue: '$0',
   },
   {
     id: 4,
@@ -42,7 +42,7 @@ const sampleLeads = [
     source: 'TikTok',
     campaign: 'Viral Video Campaign',
     status: 'New',
-    revenue: '₦0',
+    revenue: '$0',
   },
   {
     id: 5,
@@ -51,7 +51,7 @@ const sampleLeads = [
     source: 'Instagram',
     campaign: 'Influencer Partnership',
     status: 'Won',
-    revenue: '₦250,000',
+    revenue: '$250,000',
   },
   {
     id: 6,
@@ -60,7 +60,7 @@ const sampleLeads = [
     source: 'Facebook',
     campaign: 'Seasonal Promotion',
     status: 'Lost',
-    revenue: '₦0',
+    revenue: '$0',
   },
   {
     id: 7,
@@ -69,7 +69,7 @@ const sampleLeads = [
     source: 'Website',
     campaign: 'SEO Campaign',
     status: 'Contacted',
-    revenue: '₦0',
+    revenue: '$0',
   },
   {
     id: 8,
@@ -78,7 +78,7 @@ const sampleLeads = [
     source: 'TikTok',
     campaign: 'Creator Collaboration',
     status: 'Interested',
-    revenue: '₦95,000',
+    revenue: '$95,000',
   },
 ]
 
