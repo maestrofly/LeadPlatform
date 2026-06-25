@@ -13,7 +13,7 @@ export default function DashboardPage() {
     { label: 'New Leads Today', value: '43', change: 5 },
     { label: 'Contacted Leads', value: '1,204', change: 8 },
     { label: 'Converted Leads', value: '312', change: 15 },
-    { label: 'Revenue Generated', value: '₦1.8M', change: 22 },
+    { label: 'Revenue Generated', value: '$1.8M', change: 22 },
     { label: 'Conversion Rate', value: '11.0%', change: 3 },
   ]
 
