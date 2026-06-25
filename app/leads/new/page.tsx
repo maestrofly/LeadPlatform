@@ -12,6 +12,7 @@ export default function NewLeadPage() {
     phone: '',
     source: '',
     campaign: '',
+    brand: '', // ✅ ADDED
   })
 
   const handleChange = (
@@ -23,30 +24,30 @@ export default function NewLeadPage() {
     })
   }
 
-const handleSubmit = (e: React.FormEvent) => {
-  e.preventDefault()
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault()
 
-  const existingLeads =
-    JSON.parse(localStorage.getItem('leads') || '[]')
+    const existingLeads =
+      JSON.parse(localStorage.getItem('leads') || '[]')
 
-  const newLead = {
-    id: Date.now(),
-    ...formData,
-    status: 'New',
-    createdDate: new Date().toISOString(),
+    const newLead = {
+      id: Date.now(),
+      ...formData,
+      status: 'New',
+      createdDate: new Date().toISOString(), // ✅ correct place
+    }
+
+    existingLeads.push(newLead)
+
+    localStorage.setItem(
+      'leads',
+      JSON.stringify(existingLeads)
+    )
+
+    alert('Lead Created Successfully')
+
+    router.push('/leads')
   }
-
-  existingLeads.push(newLead)
-
-  localStorage.setItem(
-    'leads',
-    JSON.stringify(existingLeads)
-  )
-
-  alert('Lead Created Successfully')
-
-  router.push('/leads')
-}
 
   return (
     <div className="max-w-2xl mx-auto p-8">
@@ -54,15 +55,11 @@ const handleSubmit = (e: React.FormEvent) => {
         Create New Lead
       </h1>
 
-      <form
-        onSubmit={handleSubmit}
-        className="space-y-5"
-      >
-        <div>
-          <label className="block mb-2">
-            Name
-          </label>
+      <form onSubmit={handleSubmit} className="space-y-5">
 
+        {/* NAME */}
+        <div>
+          <label className="block mb-2">Name</label>
           <input
             type="text"
             name="name"
@@ -73,11 +70,9 @@ const handleSubmit = (e: React.FormEvent) => {
           />
         </div>
 
+        {/* EMAIL */}
         <div>
-          <label className="block mb-2">
-            Email
-          </label>
-
+          <label className="block mb-2">Email</label>
           <input
             type="email"
             name="email"
@@ -88,11 +83,9 @@ const handleSubmit = (e: React.FormEvent) => {
           />
         </div>
 
+        {/* PHONE */}
         <div>
-          <label className="block mb-2">
-            Phone
-          </label>
-
+          <label className="block mb-2">Phone</label>
           <input
             type="text"
             name="phone"
@@ -103,11 +96,9 @@ const handleSubmit = (e: React.FormEvent) => {
           />
         </div>
 
+        {/* SOURCE */}
         <div>
-          <label className="block mb-2">
-            Source
-          </label>
-
+          <label className="block mb-2">Source</label>
           <select
             name="source"
             value={formData.source}
@@ -116,26 +107,16 @@ const handleSubmit = (e: React.FormEvent) => {
             required
           >
             <option value="">Select Source</option>
-            <option value="Facebook">
-              Facebook
-            </option>
-            <option value="Instagram">
-              Instagram
-            </option>
-            <option value="WhatsApp">
-              WhatsApp
-            </option>
-            <option value="Website">
-              Website
-            </option>
+            <option value="Facebook">Facebook</option>
+            <option value="Instagram">Instagram</option>
+            <option value="WhatsApp">WhatsApp</option>
+            <option value="Website">Website</option>
           </select>
         </div>
 
+        {/* CAMPAIGN */}
         <div>
-          <label className="block mb-2">
-            Campaign
-          </label>
-
+          <label className="block mb-2">Campaign</label>
           <input
             type="text"
             name="campaign"
@@ -146,6 +127,25 @@ const handleSubmit = (e: React.FormEvent) => {
           />
         </div>
 
+        {/* BRAND (NEW FEATURE 4) */}
+        <div>
+          <label className="block mb-2">Brand</label>
+          <select
+            name="brand"
+            value={formData.brand}
+            onChange={handleChange}
+            className="w-full border rounded-lg p-3"
+            required
+          >
+            <option value="">Select Brand</option>
+            <option value="Ocean Mall">Aer Power Pocket</option>
+            <option value="Cafe Boho">Bel Aqua</option>
+            <option value="Fairafrique">Fairafrique</option>
+            <option value="Kantanka">CharleToothpaste</option>
+          </select>
+        </div>
+
+        {/* SUBMIT */}
         <button
           type="submit"
           className="bg-black text-white px-6 py-3 rounded-lg"
@@ -156,3 +156,5 @@ const handleSubmit = (e: React.FormEvent) => {
     </div>
   )
 }
+
+

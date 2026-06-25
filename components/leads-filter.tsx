@@ -1,36 +1,70 @@
 'use client'
 
-interface LeadsFilterProps {
-  onFilterChange: (filter: string) => void
-  currentFilter: string
+type Props = {
+  filters: {
+    brand: string
+    status: string
+    source: string
+    campaign: string
+  }
+  onChange: (key: string, value: string) => void
 }
 
-export function LeadsFilter({ onFilterChange, currentFilter }: LeadsFilterProps) {
-  const filters = [
-    { label: 'All Leads', value: 'all' },
-    { label: 'New', value: 'New' },
-    { label: 'Contacted', value: 'Contacted' },
-    { label: 'Won', value: 'Won' },
-    { label: 'Lost', value: 'Lost' },
-    { label: 'Facebook', value: 'Facebook' },
-    { label: 'Instagram', value: 'Instagram' },
-  ]
-
+export function LeadsFilter({ filters, onChange }: Props) {
   return (
-    <div className="flex gap-3 flex-wrap">
-      {filters.map((filter) => (
-        <button
-          key={filter.value}
-          onClick={() => onFilterChange(filter.value)}
-          className={`px-4 py-2 rounded-lg font-medium transition-all ${
-            currentFilter === filter.value
-              ? 'bg-primary text-primary-foreground'
-              : 'bg-card border border-border text-muted-foreground hover:text-foreground'
-          }`}
+    <div className="bg-card border border-border rounded-lg p-4 mb-6">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+
+        {/* BRAND */}
+        <select
+          value={filters.brand}
+          onChange={(e) => onChange('brand', e.target.value)}
+          className="border rounded-lg p-2 bg-background"
         >
-          {filter.label}
-        </button>
-      ))}
+          <option value="all">All Brands</option>
+          <option value="Ocean Mall">Aer Power Pocket</option>
+          <option value="Cafe Boho">Bel Aqua</option>
+          <option value="Fairafrique">Fairafrique</option>
+          <option value="Kantanka">Charle toothpaste</option>
+        </select>
+
+        {/* STATUS */}
+        <select
+          value={filters.status}
+          onChange={(e) => onChange('status', e.target.value)}
+          className="border rounded-lg p-2 bg-background"
+        >
+          <option value="all">All Status</option>
+          <option value="New">New</option>
+          <option value="Contacted">Contacted</option>
+          <option value="Interested">Interested</option>
+          <option value="Won">Won</option>
+          <option value="Lost">Lost</option>
+        </select>
+
+        {/* SOURCE */}
+        <select
+          value={filters.source}
+          onChange={(e) => onChange('source', e.target.value)}
+          className="border rounded-lg p-2 bg-background"
+        >
+          <option value="all">All Sources</option>
+          <option value="Facebook">Facebook</option>
+          <option value="Instagram">Instagram</option>
+          <option value="Website">Website</option>
+          <option value="TikTok">TikTok</option>
+        </select>
+
+        {/* CAMPAIGN SEARCH */}
+        <input
+          value={filters.campaign}
+          onChange={(e) => onChange('campaign', e.target.value)}
+          placeholder="Search campaign..."
+          className="border rounded-lg p-2 bg-background"
+        />
+      </div>
     </div>
   )
 }
+
+
