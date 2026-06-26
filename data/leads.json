@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1782469392313,
+    "name": "John Doe",
+    "email": "john@gmail.com",
+    "phone": "0240000000",
+    "source": "Facebook",
+    "campaign": "Prime Insurance Fire Cover",
+    "brand": "Prime Insurance",
+    "status": "New",
+    "createdDate": "2026-06-26T10:23:12.313Z"
+  },
+  {
+    "id": 1782470510656,
+    "name": "John Doe",
+    "email": "john@gmail.com",
+    "phone": "0240000000",
+    "source": "Facebook",
+    "campaign": "Prime Insurance Fire Cover",
+    "brand": "Prime Insurance",
+    "status": "New",
+    "createdDate": "2026-06-26T10:41:50.656Z"
+  },
+  {
+    "id": 1782470566057,
+    "name": "Ama Boateng",
+    "email": "ama@gmail.com",
+    "phone": "0244000000",
+    "source": "Instagram",
+    "campaign": "Comm Errands creator promo",
+    "brand": "Comm ERRANDS",
+    "status": "New",
+    "createdDate": "2026-06-26T10:42:46.057Z"
+  },
+  {
+    "id": 1782475279757,
+    "name": "Seyram Amuzu",
+    "email": "SA@gmail.com",
+    "phone": "0244230000",
+    "source": "Whatsapp",
+    "campaign": "NOVO promo",
+    "brand": "NOVO",
+    "status": "New",
+    "createdDate": "2026-06-26T12:01:19.758Z"
+  },
+  {
+    "id": 1782476473960,
+    "name": "Nasir Armando",
+    "email": "NAS@gmail.com",
+    "phone": "0244230330",
+    "source": "Website",
+    "campaign": "Glico Health Insurance",
+    "brand": "Glico",
+    "status": "New",
+    "createdDate": "2026-06-26T12:21:13.960Z"
+  }
+]

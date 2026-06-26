@@ -22,10 +22,11 @@ export function LeadsFilter({ filters, onChange }: Props) {
           className="border rounded-lg p-2 bg-background"
         >
           <option value="all">All Brands</option>
-          <option value="Ocean Mall">Aer Power Pocket</option>
-          <option value="Cafe Boho">Bel Aqua</option>
+          <option value="Aer Power Pocket">Aer Power Pocket</option>
+          <option value="Bel Aqua">Bel Aqua</option>
           <option value="Fairafrique">Fairafrique</option>
-          <option value="Kantanka">Charle toothpaste</option>
+          <option value="Charle Toothpaste">Charle toothpaste</option>
+          <option value="Glico Health Insurance">Glico Health Insurance</option>
         </select>
 
         {/* STATUS */}

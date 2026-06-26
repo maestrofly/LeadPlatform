@@ -138,10 +138,11 @@ export default function NewLeadPage() {
             required
           >
             <option value="">Select Brand</option>
-            <option value="Ocean Mall">Aer Power Pocket</option>
-            <option value="Cafe Boho">Bel Aqua</option>
+            <option value="Aer Power Pocket">Aer Power Pocket</option>
+            <option value="Bel Aqua">Bel Aqua</option>
             <option value="Fairafrique">Fairafrique</option>
-            <option value="Kantanka">CharleToothpaste</option>
+            <option value="CharleToothpaste">CharleToothpaste</option>
+            <option value="Glico Health Insurance">Glico Health Insurance</option>
           </select>
         </div>
 

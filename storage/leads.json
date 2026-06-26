@@ -1,0 +1,73 @@
+[
+  {
+    "id": 1782487517264,
+    "name": "Live Ad Lead 269",
+    "phone": "23312322592",
+    "email": "",
+    "source": "Facebook Ads",
+    "campaign": "Live Demo Campaign",
+    "brand": "Kantanka",
+    "status": "Interested",
+    "createdDate": "2026-06-26T15:25:17.265Z",
+    "utm_source": "facebook",
+    "platform": "meta",
+    "updatedAt": "2026-06-26T15:26:06.716Z"
+  },
+  {
+    "id": 1782487504329,
+    "name": "Live Ad Lead 994",
+    "phone": "233624198088",
+    "email": "",
+    "source": "Facebook Ads",
+    "campaign": "Live Demo Campaign",
+    "brand": "Kantanka",
+    "status": "New",
+    "createdDate": "2026-06-26T15:25:04.329Z",
+    "utm_source": "facebook",
+    "platform": "meta"
+  },
+  {
+    "id": 1782484262235,
+    "name": "Stephen Appiah",
+    "email": "SteveAppiah23@gmail.com",
+    "phone": "0243467891",
+    "source": "Facebook",
+    "campaign": "Charlie Toothpaste Promo",
+    "brand": "CharlieToothpaste",
+    "status": "New",
+    "createdDate": "2026-06-26T14:31:02.235Z"
+  },
+  {
+    "id": 1782484298434,
+    "name": "Stephen Appiah",
+    "email": "SteveAppiah23@gmail.com",
+    "phone": "0243467891",
+    "source": "Facebook",
+    "campaign": "Charlie Toothpaste Promo",
+    "brand": "CharlieToothpaste",
+    "status": "New",
+    "createdDate": "2026-06-26T14:31:38.434Z"
+  },
+  {
+    "id": 1782484530001,
+    "name": "Musa Teku",
+    "email": "Mas3223@gmail.com",
+    "phone": "0243423291",
+    "source": "WhatsApp",
+    "campaign": "Fairafrique Promo",
+    "brand": "Fairafrique",
+    "status": "New",
+    "createdDate": "2026-06-26T14:35:30.001Z"
+  },
+  {
+    "id": 1782484678408,
+    "name": "Unity Seku",
+    "email": "Unise2@gmail.com",
+    "phone": "0241245678",
+    "source": "Website",
+    "campaign": "Novo Promo",
+    "brand": "Novo",
+    "status": "New",
+    "createdDate": "2026-06-26T14:37:58.408Z"
+  }
+]

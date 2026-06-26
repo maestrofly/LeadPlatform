@@ -46,7 +46,9 @@ export function DashboardHeader() {
 
         <div className="flex items-center gap-4">
           <button className="px-4 py-2 rounded-lg bg-secondary text-foreground font-medium hover:bg-secondary/80 transition-colors">
-            Profile
+            <Link href="/profile">
+               Profile 
+           </Link>
           </button>
         </div>
       </div>
